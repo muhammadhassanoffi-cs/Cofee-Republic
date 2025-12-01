@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+   <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="logo4.png" alt="" height="40px"></a>
+            <ul class="navlinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="coffee.html">COFFEE</a></li>
+                <li><a href="food.html">FOOD</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="cart.html">CART</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br><br><br>
+
+
+  <main>
+
+    <section class="cart">
+      <h1>Your Shopping Cart</h1>
+      <table id="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Cart items will appear here -->
+        </tbody>
+      </table>
+      <h3>Subtotal: $<span id="subtotal">0</span></h3>
+    </section>
+    <a href="checkout.html"><button type="submit">Buy Now</button></a>
+    
+  </main>
+
+  <script src="cart.js"></script>
+
+
+</body>
+</html>

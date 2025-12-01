@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.contacthead{
+    height: 60vh;
+    background-image: url("Contact.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contacthead h1{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+.content{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0;
+    gap: 40px;
+    max-width: 1400px;
+}
+
+.contentbox{
+    width: 50%;
+    min-width: 300px;
+}
+
+.contenttitle{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #222;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.contenttitle::after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 3px;
+    background-color: #C5A56F;  
+    margin-top: 10px;
+}
+
+.contentbox p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+
+.feedback {
+    width: 45%;
+}
+
+.feedback form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback input,
+.feedback textarea {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+
+}
+
+#txtarea{
+    resize: none;
+    width: 90%;
+    height: 150px;
+}
+
+.feedback button {
+    padding: 12px;
+    font-size: 18px;
+    background-color: #C5A56F;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 45%;
+    
+}
+
+#l{
+    font-size: 20px;
+    color: #444;
+}
+
+/*   Responsive Fixes for mobile And Tablet  */
+
+@media (max-width: 992px) {
+    .contacthead h1 {
+        font-size: 40px;
+    }
+
+    .content {
+        padding: 40px 20px;
+    }
+
+    .contentbox,
+    .feedback {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacthead {
+        height: 45vh;
+        background-attachment: scroll; 
+    }
+
+    .contacthead h1 {
+        font-size: 32px;
+    }
+
+    .content {
+        gap: 20px;
+    }
+
+    .contentbox,
+    .feedback {
+        width: 100%;
+    }
+
+    .feedback button {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contacthead h1 {
+        font-size: 26px;
+    }
+
+    .contenttitle {
+        font-size: 28px;
+    }
+
+    .contentbox p,
+    .feedback input,
+    .feedback textarea {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEE</title>
+    <link rel="stylesheet" href="coffee.css">
+    <link rel="stylesheet" href="navbar.css">
+   
+</head>
+<body>
+     <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="logo4.png" alt="" height="40px"></a>
+            <ul class="navlinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="coffee.html">COFFEE</a></li>
+                <li><a href="food.html">FOOD</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="cart.html">CART</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 class="title">COFFEE</h1>
+
+    <div class="search-box">
+        <input type="text" id="searchinput" placeholder="Search coffee">
+    </div>
+
+      
+     
+    <div id="search-result"></div>
+
+  <div class="Allproducts">
+
+    <div class="product">
+        <img src="Kona Coffe.png" alt="Kona Coffee">
+        <h3>Kona Coffee</h3>
+        <button class="button" onclick="addtocart(1, 'Kona Coffee', 15)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="Colombia Antioqia.png" alt="Colombia Antioqia">
+        <h3>Colombia Antioqia</h3>
+        <button class="button" onclick="addtocart(2, 'Colombia Antioqia', 18)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="Mocha Java.png" alt="Mocha Java Coffee">
+        <h3>Mocha Java Coffee</h3>
+        <button class="button" onclick="addtocart(3, 'Mocha Java Coffee', 20)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="Espresso Roast Coffe.png" alt="Espresso Roast Coffee">
+        <h3>Espresso Roast Coffee</h3>
+        <button class="button" onclick="addtocart(4, 'Espresso Roast Coffee', 22)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="French Vanela Coffe.png" alt="French Vanilla Coffee">
+        <h3>French Vanilla Coffee</h3>
+        <button class="button" onclick="addtocart(5, 'French Vanilla Coffee', 17)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="House Blend Coffe.png" alt="House Blend Coffee">
+        <h3>House Blend Coffee</h3>
+        <button class="button" onclick="addtocart(6, 'House Blend Coffee', 16)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="Viennese Coffe.png" alt="Viennese Coffee">
+        <h3>Viennese Coffee</h3>
+        <button class="button" onclick="addtocart(7, 'Viennese Coffee', 19)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="Sulawase Coffe.png" alt="Sulawase Coffee">
+        <h3>Sulawase Coffee</h3>
+        <button class="button" onclick="addtocart(8, 'Sulawase Coffee', 21)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+        <img src="Hazelnut Coffe.png" alt="Hazelnut Coffee">
+        <h3>Hazelnut Coffee</h3>
+        <button class="button" onclick="addtocart(9, 'Hazelnut Coffee', 18)">Add to Cart</button>
+    </div>
+    
+</div>  
+    <script src="coffee.js"></script>
+      <script src="cart.js"></script>
+</body>
+</html>

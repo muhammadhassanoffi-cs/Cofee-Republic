@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="checkoutstyle.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+     <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="logo4.png" alt="" height="40px"></a>
+            <ul class="navlinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="coffee.html">COFFEE</a></li>
+                <li><a href="food.html">FOOD</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="cart.html">CART</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="form1">
+        <form action="">
+            <div class="row">
+                <div class="column">
+                    <h3 class="title">Billing Address</h3>
+                    <div class="input-box">
+                        <span>Full Name :</span>
+                        <input type="text" >
+                    </div>
+                    <div class="input-box">
+                        <span>Email :</span>
+                        <input type="email">
+                    </div>
+                    <div class="input-box">
+                        <span>Address :</span>
+                        <input type="text" >
+                    </div>
+                    <div class="input-box">
+                        <span>City :</span>
+                        <input type="text" >
+                    </div>
+
+                    <div class="flex">
+                        <div class="input-box">
+                            <span>State :</span>
+                            <input type="text">
+                        </div>
+                        <div class="input-box">
+                            <span>Zip Code :</span>
+                            <input type="number">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <h3 class="title">Payment</h3>
+                    <div class="input-box">
+                        <span>Cards Accepted :</span>
+                        <img src="imgcards.png" alt="">
+                    </div>
+                    <div class="input-box">
+                        <span>Name On Card :</span>
+                        <input type="text" >
+                    </div>
+                    <div class="input-box">
+                        <span>Credit Card Number :</span>
+                        <input type="number">
+                    </div>
+                    <div class="input-box">
+                        <span>Exp. Month :</span>
+                        <input type="text">
+                    </div>
+                
+                    <div class="flex">
+                        <div class="input-box">
+                            <span>Exp. Year :</span>
+                            <input type="number">
+                        </div>
+                        <div class="input-box">
+                            <span>CVV :</span>
+                            <input type="number">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            <button type="submit" class="btn">Submit</button>
+
+               
+
+            </div>
+
+        </form>
+        <form action="" class="form2">
+
+<table id="orderTable">
+    <thead>
+           <h3 class="title">ORDER SUMMARY</h3>
+           <br>
+
+        <tr>
+            <th>Product Name</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<h3 class="grand-total">Grand Total: $<span id="grandTotal">0</span></h3>
+        </form>
+    </div>
+    
+
+    <script src="order.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="food.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+   <header>
+        <nav class="navbar">
+            <a href="#" class="logo"><img src="logo4.png" alt="" height="40px"></a>
+            <ul class="navlinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="coffee.html">COFFEE</a></li>
+                <li><a href="food.html">FOOD</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="cart.html">CART</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+      <h1 class="title">Food</h1>
+       <div class="search">
+        <input type="text" id="searchinput" placeholder="food search">
+          <div id="search-message"></div>
+       </div>
+     
+       <div class="search-result"></div>
+
+       <div class="AllFood">
+
+        <div class="product">
+            <img src="Raffaello Crunch.png" alt="Raffaello Crunch">
+            <h3> Raffaello Crunch</h3>
+            <button class="button" onclick="addtocart(101,'Raffaello Crunch',29)"> Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Cookies and cream.png" alt="Cookies and cream">
+            <h3>Cookies and cream</h3>
+            <button class="button" onclick="addtocart(102,'Cookies and cream',28)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Oreo Chocolate.png" alt="Oreo Chocolate">
+            <h3>Oreo Chocolate</h3>
+            <button class="button" onclick="addtocart(103,'Oreo Chocolate',30)"> Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Chunky blend cookie.png" alt="Chunky blend cookie">
+            <h3>Chunky blend cookie</h3>
+            <button class="button" onclick="addtocart(104,'Chunky blend cookie',1)">Add to Cart</button>
+        </div>
+          <div class="product">
+            <img src="Milk chocolate cookie.png" alt="Milk chocolate cookie">
+            <h3>Milk chocolate cookie</h3>
+            <button class="button" onclick="addtocart(105,'Milk chocolate cookie',15)">Add to Cart</button>
+        </div>
+          <div class="product">
+            <img src="Triple chocolate cookie.png" alt="Trile chocolate cookie">
+            <h3>Trile chocolate cookie</h3>
+            <button class="button" onclick="addtocart(106,'Trile chocolate cookie',16)">Add to Cart</button>
+        </div>
+          <div class="product">
+            <img src="peproni piza.png" alt="Pepperoni Pizza">
+            <h3>Pepperoni Pizza</h3>
+            <button class="button" onclick="addtocart(107,'Pepperoni Pizza',17)">Add to Cart</button>
+        </div>
+          <div class="product">
+            <img src="Chicken BBQ Pizza.png" alt="Chicken BBQ Pizza">
+            <h3>Chicken BBQ Pizza</h3>
+            <button class="button" onclick="addtocart(108,'Chicken BBQ Pizza',18)">Add to Cart</button>
+        </div>
+          <div class="product">
+            <img src="Spicy Chicken Fajita.png" alt="Spicy Chicken Fajita">
+            <h3>Spicy Chicken Fajita pizza</h3>
+            <button class="button" onclick="addtocart(109,'Spicy Chicken Fajita pizza',19)">Add to Cart</button>
+        </div>
+       </div>
+       <script src="food.js"></script>
+       <script src="cart.js"></script>
+    
+</body>
+</html>

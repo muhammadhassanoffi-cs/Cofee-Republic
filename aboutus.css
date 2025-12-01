@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.abouthead{
+    height: 70vh;
+    background-image: url("people.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.abouthead h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+.aboutcontent{
+    display: flex;
+    gap: 150px;
+    padding: 100px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contentimg img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.contentpara{
+    width: 60%;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #333;
+}
+
+
+
+
+.reach {
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+    background: #f9f7f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    
+}
+
+.reach h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: #2c2c2c;
+    text-align: center;
+}
+
+.reach h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #5a4635;
+}
+
+.reach p {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #444;
+}
+
+.reach a {
+    font-size: 18px;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.reach a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*  Responsive Media for different screen sizes */
+
+/* ===== Tablets (768px – 1024px) ===== */
+@media (max-width: 1024px) {
+
+    .abouthead h1 {
+        font-size: 50px;
+    }
+
+    .aboutcontent {
+        gap: 60px;
+        padding: 50px;
+    }
+
+    .contentpara {
+        width: 100%;
+    }
+}
+
+/* ===== Mobile Phones (0 – 767px) ===== */
+@media (max-width: 767px) {
+
+    .abouthead {
+        height: 50vh;
+        background-attachment: scroll; 
+    }
+
+    .abouthead h1 {
+        font-size: 32px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .aboutcontent {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .contentpara {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .reach {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .reach h1 {
+        font-size: 28px;
+    }
+
+    .reach h2 {
+        font-size: 20px;
+    }
+
+    .reach p,
+    .reach a {
+        font-size: 16px;
+    }
+}
